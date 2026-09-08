@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Foglio — Privacy Policy</title>
+<title>Foglio (ScanVio) — Privacy Policy</title>
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -14,21 +14,21 @@
   </nav>
 
   <h1>Privacy Policy</h1>
-  <p class="updated"><strong>Effective date:</strong> 2026-07-20 · <strong>Last updated:</strong> 2026-07-20</p>
+  <p class="updated"><strong>Effective date:</strong> 2026-09-09 · <strong>Last updated:</strong> 2026-09-09</p>
 
-  <p>This Privacy Policy describes how <strong>Foglio</strong> ("we", "our", or "us") collects, uses, and shares information when you use the Foglio mobile application (the "App"). This policy is written to comply with the Google Play <strong>User Data policy</strong>, <strong>Data safety</strong> section, and applicable laws including the EU <strong>GDPR</strong> and the <strong>California CCPA/CPRA</strong>.</p>
+  <p>This Privacy Policy describes how <strong>Foglio (ScanVio)</strong> ("we", "our", or "us") collects, uses, and shares information when you use the Foglio/ScanVio application on iOS, iPadOS, macOS, or Android (the "App"). It applies to distribution through the Apple App Store and Google Play, and is written to comply with Apple App Store privacy requirements, the Google Play <strong>User Data policy</strong>, the <strong>Data safety</strong> section, the EU <strong>GDPR</strong>, and the <strong>California CCPA/CPRA</strong>.</p>
 
-  <p>By downloading, installing, or using the App, you agree to the terms of this Privacy Policy.</p>
+  <p>By downloading, installing, or using the App, you acknowledge this Privacy Policy. Where consent is required for personalized advertising, we request it separately and you may decline.</p>
 
   <h2>1. Summary</h2>
   <p>Foglio is designed to be <strong>offline-first</strong>. All documents you scan, convert, or edit are processed <strong>locally on your device</strong>. We do not upload, transmit, or store your documents on any server.</p>
   <p>The only categories of data that leave your device are:</p>
   <ul>
-    <li><strong>Advertising identifiers</strong> and related device data, collected by Google AdMob to serve ads (if you use the free version of the App).</li>
-    <li><strong>Purchase transaction data</strong>, handled by Google Play Billing when you subscribe or make an in-app purchase.</li>
-    <li><strong>Crash and performance diagnostics</strong>, if you have not opted out of Google Play's automatic crash reporting.</li>
+    <li><strong>Advertising identifiers</strong> and related device data, collected by Google AdMob to serve ads on iOS/iPadOS and Android (if you use the free version of the App). The macOS version does not serve AdMob ads.</li>
+    <li><strong>Purchase transaction data</strong>, handled by Apple In-App Purchase/StoreKit on Apple platforms or Google Play Billing on Android.</li>
+    <li><strong>Crash, performance, and limited usage diagnostics</strong>, processed by Firebase Crashlytics and Firebase Analytics where enabled.</li>
   </ul>
-  <p>Foglio itself does not operate any analytics, telemetry, or user-tracking infrastructure.</p>
+  <p>We do not receive your document contents. Firebase, AdMob, Apple StoreKit, and Google Play process only the data described below for their stated purposes.</p>
 
   <h2>2. Data We Collect</h2>
 
@@ -49,7 +49,7 @@
   <p>We do not have access to any of the above.</p>
 
   <h3>2.2 Data collected by third-party services</h3>
-  <p><strong>Google AdMob</strong> — if you use the free version of the App, AdMob may collect and process:</p>
+  <p><strong>Google AdMob</strong> — if you use the free version of the iOS/iPadOS or Android version, AdMob may collect and process:</p>
   <ul>
     <li>Advertising ID (AAID)</li>
     <li>Coarse device information (model, OS version, language, general location derived from IP)</li>
@@ -58,9 +58,11 @@
   </ul>
   <p>AdMob's use of this data is governed by <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
 
-  <p><strong>Google Play Services (Billing)</strong> — when you make a purchase, Google Play processes your Google account identifier, purchase token, and payment method. We receive only a purchase token used to unlock features. We do not receive your payment card, address, or Google account email.</p>
+  <p><strong>Apple In-App Purchase (StoreKit)</strong> — on iOS, iPadOS, and macOS, Apple processes your Apple Account, transaction, subscription, and payment information. We receive transaction identifiers or signed transaction data needed to verify entitlements. We do not receive your payment card details.</p>
 
-  <p><strong>Google Play (Crash reporting)</strong> — Google Play automatically collects crash stack traces and ANR (Application Not Responding) reports for apps installed from the Play Store. You can opt out via your device settings (<strong>Settings → Google → Usage &amp; diagnostics</strong>).</p>
+  <p><strong>Google Play Billing</strong> — on Android, Google processes your Google account identifier, purchase token, and payment method. We receive only a purchase token used to unlock features.</p>
+
+  <p><strong>Firebase Crashlytics and Analytics</strong> — where enabled, these services receive crash reports, app instance identifiers, device and OS details, and limited event data to diagnose failures and improve reliability. Their processing is governed by Google's privacy terms.</p>
 
   <p><strong>Google ML Kit</strong> — text recognition (OCR) runs entirely on-device. Some language recognizers may download model files from Google servers on first use. No document contents are transmitted.</p>
 
@@ -81,22 +83,24 @@
     <thead><tr><th>Permission</th><th>Reason</th><th>Required?</th></tr></thead>
     <tbody>
       <tr><td>Camera</td><td>Capture pages for scanning</td><td>Only when you use Scan</td></tr>
-      <tr><td>Read media images</td><td>Import photos as sources</td><td>Only when you tap Import</td></tr>
+      <tr><td>Photo Library (iOS/iPadOS)</td><td>Import photos as sources</td><td>Only when you tap Import</td></tr>
+      <tr><td>Camera (macOS)</td><td>Capture pages for scanning</td><td>Only when you use Scan</td></tr>
       <tr><td>Internet</td><td>Load ads (free tier), download OCR models</td><td>Yes</td></tr>
       <tr><td>Access network state</td><td>Detect connectivity for ad loading</td><td>Yes</td></tr>
-      <tr><td>Advertising ID (Android 13+)</td><td>Personalized advertising via AdMob</td><td>Only in the free tier</td></tr>
+      <tr><td>Advertising identifier (iOS/Android)</td><td>Ad measurement and, if consented, personalized advertising</td><td>Only in the free tier</td></tr>
     </tbody>
   </table>
-  <p>You may revoke any runtime permission at any time via <strong>Settings → Apps → Foglio → Permissions</strong>.</p>
+  <p>You may revoke permissions in your device settings. On iOS, camera and photo access are managed in <strong>Settings → Privacy &amp; Security</strong>; on macOS, they are managed in <strong>System Settings → Privacy &amp; Security</strong>.</p>
 
   <h2>4. How We Use Information</h2>
-  <p>We do not "use" your document data because we never receive it. Data collected by AdMob is used to select and measure advertising. Data collected by Google Play Billing is used to fulfill your purchase.</p>
+  <p>We do not "use" your document data because we never receive it. Data collected by AdMob is used to select and measure advertising on supported mobile platforms; the macOS version does not initialize AdMob. StoreKit and Google Play Billing data is used to fulfill and restore your purchase.</p>
   <p>Specifically:</p>
   <ul>
     <li><strong>To operate the App</strong>: locally, without server calls.</li>
-    <li><strong>To serve advertising</strong>: through AdMob (free tier only).</li>
-    <li><strong>To process purchases</strong>: through Google Play Billing.</li>
-    <li><strong>To improve stability</strong>: aggregate crash reports from Google Play.</li>
+    <li><strong>To serve advertising</strong>: through AdMob on iOS/iPadOS and Android (free tier only).</li>
+    <li><strong>To process purchases</strong>: through Apple StoreKit or Google Play Billing, depending on platform.</li>
+    <li><strong>To diagnose failures</strong>: through Firebase Crashlytics and Analytics where enabled.</li>
+    <li><strong>To improve stability</strong>: aggregate crash reports from Firebase Crashlytics where enabled.</li>
   </ul>
   <p>We do not sell your personal information. We do not share it with data brokers.</p>
 
@@ -106,8 +110,9 @@
     <thead><tr><th>Recipient</th><th>Data</th><th>Purpose</th></tr></thead>
     <tbody>
       <tr><td>Google AdMob</td><td>Advertising ID, coarse device info, IP</td><td>Advertising</td></tr>
-      <tr><td>Google Play Billing</td><td>Purchase token, Google account (by Google, not by us)</td><td>Payments</td></tr>
-      <tr><td>Google Play Console</td><td>Crash and ANR reports</td><td>App stability</td></tr>
+      <tr><td>Apple StoreKit</td><td>Signed transaction data and subscription status</td><td>Payments and entitlement restoration</td></tr>
+      <tr><td>Google Play Billing</td><td>Purchase token and billing status</td><td>Payments</td></tr>
+      <tr><td>Firebase</td><td>Crash reports, device and app instance data, limited events</td><td>App stability and diagnostics</td></tr>
     </tbody>
   </table>
   <p>We do not share your data with any other third party. We do not transfer data to our own servers because we do not operate any.</p>
@@ -115,7 +120,7 @@
   <h2>6. Data Retention and Deletion</h2>
   <p><strong>Documents and other data on your device</strong> are retained until you delete them within the App or uninstall the App. Uninstalling removes all local data.</p>
   <p><strong>AdMob data</strong> is retained by Google according to <a href="https://policies.google.com/technologies/retention">Google's retention policy</a>.</p>
-  <p><strong>Purchase records</strong> are retained by Google Play for legal and accounting reasons.</p>
+  <p><strong>Purchase records</strong> are retained by Apple or Google for legal, accounting, subscription, and refund purposes.</p>
   <p><strong>Deletion requests</strong>: because we do not store personal data on our servers, we cannot delete anything on our side. To delete all data associated with Foglio, uninstall the App. To request deletion of AdMob-collected data, use <a href="https://myadcenter.google.com/">Google's My Ad Center</a>.</p>
 
   <h2>7. Children's Privacy</h2>
@@ -152,11 +157,11 @@
     <li><strong>Email</strong>: <a href="mailto:sxz953781@gmail.com">sxz953781@gmail.com</a></li>
     <li><strong>Address</strong>: <em>(to be filled with registered business address before Play submission)</em></li>
   </ul>
-  <p>For AdMob-related requests, use Google's <a href="https://myadcenter.google.com/">My Ad Center</a>. For Google Play Billing questions, contact <a href="https://support.google.com/googleplay">Google Play Support</a>.</p>
+  <p>For AdMob-related requests, use Google's <a href="https://myadcenter.google.com/">My Ad Center</a>. For Apple purchases, contact <a href="https://support.apple.com/billing">Apple Support</a>; for Google Play purchases, contact <a href="https://support.google.com/googleplay">Google Play Support</a>.</p>
 
   <hr>
   <footer>
-    <p class="muted">Foglio is a trademark of the Foglio developers. This policy is provided in English; translations may be offered for convenience but the English version governs.</p>
+    <p class="muted">Foglio (ScanVio) is the product name used by the developer. This policy is provided in English; translations may be offered for convenience but the English version governs.</p>
   </footer>
 </main>
 </body>
